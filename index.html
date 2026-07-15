@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RehabVerse 陪伴式復健系統｜把復健變成一起玩的遊戲</title>
+  <meta name="description" content="RehabVerse 結合 BCI 腦機介面與肌電感測，把每次復健動作量化並轉化為遊戲，打造能一起復健的機器人夥伴，提升患者的復健意願與成效。" />
+  <meta name="theme-color" content="#0c0416" />
+  <link rel="canonical" href="https://rehabverse.ai/" />
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="RehabVerse 陪伴式復健系統" />
+  <meta property="og:description" content="用 BCI 與肌電技術量化復健動作、遊戲化復健歷程，打造一起復健的機器人夥伴。" />
+  <meta property="og:image" content="https://picsum.photos/seed/rehabverse/1200/630" />
+  <meta property="og:url" content="https://rehabverse.ai/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23a855f7'/%3E%3Cstop offset='.5' stop-color='%23ec4899'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Space Grotesk,Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#top" class="skip-link">跳到主要內容</a>
+  <!-- Film grain / noise texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+  <!-- Twinkling starfield -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="stars stars-2" aria-hidden="true"></div>
+  <div class="stars stars-bright" aria-hidden="true"></div>
+  <!-- Animated background -->
+  <div class="bg-orbs">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+    <svg class="bg-blob" viewBox="0 0 200 200" aria-hidden="true">
+      <defs>
+        <linearGradient id="bgHolo" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#a855f7"/>
+          <stop offset="50%" stop-color="#ec4899"/>
+          <stop offset="100%" stop-color="#22d3ee"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#bgHolo)">
+        <animate attributeName="d" dur="18s" repeatCount="indefinite"
+          values="M45,-63C57,-53,63,-36,67,-19C71,-2,72,15,65,29C58,43,43,54,26,62C9,70,-9,74,-26,68C-43,62,-59,46,-66,28C-73,10,-71,-10,-62,-26C-53,-42,-37,-54,-20,-64C-3,-74,15,-82,45,-63Z;
+                  M50,-67C64,-55,73,-37,74,-19C75,-1,68,17,58,32C48,47,35,59,18,66C1,73,-18,75,-34,68C-50,61,-63,45,-69,27C-75,9,-74,-11,-64,-27C-54,-43,-36,-55,-18,-65C0,-75,17,-79,50,-67Z;
+                  M45,-63C57,-53,63,-36,67,-19C71,-2,72,15,65,29C58,43,43,54,26,62C9,70,-9,74,-26,68C-43,62,-59,46,-66,28C-73,10,-71,-10,-62,-26C-53,-42,-37,-54,-20,-64C-3,-74,15,-82,45,-63Z"/>
+      </path>
+    </svg>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark"></span>
+        RehabVerse
+      </a>
+      <nav class="nav-links" aria-label="主要導覽">
+        <a href="#product">產品</a>
+        <a href="#pain">痛點</a>
+        <a href="#solution">解決方案</a>
+        <a href="#features">核心功能</a>
+        <a href="#specs">規格</a>
+        <a href="#business">方案</a>
+      </nav>
+      <a href="#contact" class="btn btn-ghost nav-cta">立即體驗</a>
+    </div>
+  </header>
+
+  <main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Physical AI 陪伴式復健系統</p>
+        <h1 class="headline">
+          讓復健<br />
+          <span class="grad-text">不再枯燥</span><br />
+          的宇宙
+        </h1>
+        <p class="hero-sub">
+          RehabVerse 結合 <strong>BCI 腦機介面</strong>與<strong>肌電感測</strong>，
+          把每次復健動作量化並轉化為遊戲，打造能一起復健的機器人夥伴，
+          幫助患者提升復健意願與成效。
+        </p>
+        <div class="hero-actions">
+          <a href="#solution" class="btn btn-primary">探索解決方案</a>
+          <a href="#features" class="btn btn-ghost">查看核心功能</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>2</b><span>硬體採用方案</span></div>
+          <div><b>EEG+EMG</b><span>雙訊號感測</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="product-stage">
+          <div class="glow-ring"></div>
+
+          <div class="product-card main-shot">
+            <span class="badge">Rehab System</span>
+            <div class="vr-figure">RV</div>
+            <p class="shot-label">腦機與肌電<br>沉浸式復健</p>
+          </div>
+          <div class="product-card float-shot shot-a"><span>肌電出力量化</span></div>
+          <div class="product-card float-shot shot-b"><span>遊戲化情境</span></div>
+          <div class="product-card float-shot shot-c"><span>機器人夥伴</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SHOWCASE -->
+  <section class="section" id="product">
+    <div class="section-head">
+      <span class="tag">Product Showcase</span>
+      <h2>產品實際呈現</h2>
+      <p>從產品本體、遊戲化情境到追蹤回饋，RehabVerse 完整呈現一套沉浸式復健系統。</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot">
+        <img class="shot-img" src="product.png" alt="RehabVerse 產品本體" />
+        <figcaption>產品本體 · 感測與硬體整合</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="game.png" alt="遊戲化復健畫面" />
+        <figcaption>遊戲畫面 · 情境化復健任務</figcaption>
+      </figure>
+      <figure class="shot">
+        <img class="shot-img" src="feedback.png" alt="追蹤與回饋介面" />
+        <figcaption>回饋介面 · 家屬與醫護追蹤</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PAIN & SOLUTION -->
+  <section class="section" id="pain">
+    <img class="scatter-shot scatter-1" src="shot1.png" alt="" aria-hidden="true" />
+    <div class="section-head">
+      <span class="tag">Industry Pain Points</span>
+      <h2>產業場景痛點</h2>
+      <p>復健過程枯燥，患者的復健意願因此下降，這是復健醫療現場最真實的問題。</p>
+    </div>
+
+    <div class="split">
+      <div class="pain-col">
+        <h3 class="col-title pain">目前面臨的痛點</h3>
+        <ul class="pain-list">
+          <li>
+            <span class="num">01</span>
+            <div><b>復健成效不佳</b><p>患者缺乏動機，難以維持長期規律訓練，恢復進度也因此受影響。</p></div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div><b>家屬擔憂且難以陪伴</b><p>工作繁忙難以親自陪同，對復健進度也無從掌握。</p></div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div><b>醫療人員負擔加重</b><p>需要花費額外心力督促與紀錄，人力成本因此提高。</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="solution-col" id="solution">
+        <h3 class="col-title sol">解決方案</h3>
+        <p class="sol-lead">
+          RehabVerse 透過 <b>BCI 與肌電技術</b>偵測患者的復健過程，
+          把每次動作的<b>出力程度量化</b>，並將復健歷程<b>遊戲化</b>。
+          再以演算法建立<b>一起復健的機器人夥伴</b>，
+          驅動實體設備與情境回饋，幫助患者提升復健意願與成效。
+        </p>
+        <div class="flow">
+          <div class="flow-step"><span>感知</span>腦電與肌電偵測</div>
+          <i>›</i>
+          <div class="flow-step"><span>決策</span>量化與策略運算</div>
+          <i>›</i>
+          <div class="flow-step"><span>驅動</span>機器人與遊戲回饋</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE FEATURES / TASKS -->
+  <section class="section" id="features">
+    <img class="scatter-shot scatter-2" src="shot2.png" alt="" aria-hidden="true" />
+    <div class="feat-split">
+      <div class="feat-intro">
+        <span class="tag">Core Features</span>
+        <h2>核心功能<br>與亮點</h2>
+        <p>RehabVerse 能為患者、家屬與醫護帶來的實際功能，讓每一次復健都更有動力。</p>
+      </div>
+
+      <ol class="feat-list">
+        <li class="feat-item">
+          <span class="feat-no">01</span>
+          <div class="feat-body">
+            <h4>出力偵測與遊戲得分</h4>
+            <p>偵測復健用力程度，量化為遊戲情境得分，並即時提供情緒支持與鼓勵。</p>
+          </div>
+        </li>
+        <li class="feat-item">
+          <span class="feat-no">02</span>
+          <div class="feat-body">
+            <h4>多人陪伴模式</h4>
+            <p>以其他患者作為陪伴與競爭對手，一起復健，讓整個過程更有動力。</p>
+          </div>
+        </li>
+        <li class="feat-item">
+          <span class="feat-no">03</span>
+          <div class="feat-body">
+            <h4>機器人陪伴</h4>
+            <p>以演算法設計陪伴復健的機器人，透過得分操縱策略，激勵患者的復健意願。</p>
+          </div>
+        </li>
+        <li class="feat-item">
+          <span class="feat-no">04</span>
+          <div class="feat-body">
+            <h4>家屬與醫院追蹤</h4>
+            <p>透過瀏覽器登入帳號與 App，追蹤患者每次的復健成效與進度。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SYSTEM ARCHITECTURE -->
+  <section class="section" id="architecture">
+    <div class="section-head">
+      <span class="tag">System Architecture</span>
+      <h2>系統架構與整合設計</h2>
+      <p>從生理訊號擷取、特徵萃取到決策控制，構成端到端（end-to-end）的即時運作管線。</p>
+    </div>
+    <div class="arch-card">
+      <div class="arch-diagram">
+        <div class="arch-node"><b>訊號擷取層</b><span>EEG 腦電與 sEMG 表面肌電，多通道生理訊號採集</span></div>
+        <div class="arch-line"></div>
+        <div class="arch-node"><b>前處理與特徵萃取</b><span>濾波、去雜訊與 MVC 標準化，萃取時頻域特徵</span></div>
+        <div class="arch-line"></div>
+        <div class="arch-node"><b>RehabVerse 決策引擎</b><span>出力量化、演算法決策與遊戲化狀態機</span></div>
+        <div class="arch-line"></div>
+        <div class="arch-node"><b>回饋與資料層</b><span>致動器控制、即時回饋與雲端資料同步</span></div>
+      </div>
+      <p class="arch-note">
+        只要接上醫療院所現有的腦電與肌電設備，RehabVerse 就能即時讀取患者的動作與出力，
+        轉換成遊戲中的表現與回饋，並自動把復健成效上傳雲端，讓醫護與家屬隨時掌握進度。
+      </p>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="section" id="specs">
+    <img class="scatter-shot scatter-3" src="shot3.png" alt="" aria-hidden="true" />
+    <div class="section-head">
+      <span class="tag">Specifications</span>
+      <h2>規格與細節</h2>
+      <p>相容於醫療院所既有硬體，軟硬整合、即插即用的技術規格。</p>
+    </div>
+    <div class="spec-sheet">
+      <div class="spec-group">
+        <h3 class="spec-group-title">感測與運算</h3>
+        <dl class="spec-list">
+          <div class="spec-row"><dt>感測技術</dt><dd>BCI 腦機介面與肌電 EMG</dd></div>
+          <div class="spec-row"><dt>相容硬體</dt><dd>一般醫療院所腦電與肌電設備</dd></div>
+          <div class="spec-row"><dt>進階硬體</dt><dd>可參考型號購置 BioSemi</dd></div>
+          <div class="spec-row"><dt>進階模式</dt><dd>VR 沉浸式體驗，可搭配 HTC VIVE XR Elite 頭戴裝置</dd></div>
+          <div class="spec-row"><dt>運算平台</dt><dd>一般電腦搭配軟體驅動程式</dd></div>
+        </dl>
+      </div>
+      <div class="spec-group">
+        <h3 class="spec-group-title">軟體與驗證</h3>
+        <dl class="spec-list">
+          <div class="spec-row"><dt>軟體形式</dt><dd>SaaS 雲端服務</dd></div>
+          <div class="spec-row"><dt>追蹤方式</dt><dd>瀏覽器帳號與 App</dd></div>
+          <div class="spec-row"><dt>模式支援</dt><dd>單人、多人陪伴與機器人陪伴</dd></div>
+          <div class="spec-row"><dt>導入方式</dt><dd>相容醫療院所腦電與肌電設備，即插即用</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS MODEL -->
+  <section class="section" id="business">
+    <div class="section-head">
+      <span class="tag">Flexible Plans</span>
+      <h2>彈性方案，符合每種需求</h2>
+      <p>無論是沿用現有設備或搭配我們的軟硬體服務，RehabVerse 都能輕鬆導入你的復健場景。</p>
+    </div>
+
+    <div class="biz-grid">
+      <article class="biz-cell">
+        <img class="biz-shape" src="o1.png" alt="" aria-hidden="true" />
+        <span class="biz-q">硬體選項一</span>
+        <h4>沿用現有設備</h4>
+        <p>可直接使用一般醫療院所的腦電與肌電設備，也可參考型號購置 BioSemi 硬體。</p>
+      </article>
+      <article class="biz-cell">
+        <img class="biz-shape" src="o2.png" alt="" aria-hidden="true" />
+        <span class="biz-q">硬體選項二</span>
+        <h4>硬體租賃服務</h4>
+        <p>想要升級體驗，也能選擇我們提供的硬體設備租賃方案，彈性又省心。</p>
+      </article>
+      <article class="biz-cell">
+        <img class="biz-shape" src="o3.png" alt="" aria-hidden="true" />
+        <span class="biz-q">患者端軟體</span>
+        <h4>RehabVerse 復健遊戲</h4>
+        <p>以雲端服務提供患者端的復健遊戲與機器人陪伴，隨開即用、持續更新。</p>
+      </article>
+      <article class="biz-cell">
+        <img class="biz-shape" src="o4.png" alt="" aria-hidden="true" />
+        <span class="biz-q">追蹤端軟體</span>
+        <h4>醫院與家屬追蹤</h4>
+        <p>透過雲端服務即時查看復健成效，讓醫護與家屬隨時掌握每一步進度。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="cta-inner">
+      <h2>準備好一起進入 <span class="grad-text">RehabVerse</span> 了嗎？</h2>
+      <p>讓每一位患者都有陪伴，把枯燥的復健變成值得期待的旅程。</p>
+      <a href="mailto:hello@rehabverse.ai" class="btn btn-primary big">聯絡我們，了解更多</a>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo-mark"></span>
+      <div>
+        <b>RehabVerse</b>
+        <p>陪伴式復健系統</p>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="頁尾導覽">
+      <a href="#product">產品</a>
+      <a href="#features">核心功能</a>
+      <a href="#business">方案</a>
+      <a href="mailto:hello@rehabverse.ai">聯絡我們</a>
+      <a href="#" class="muted-link">隱私權政策</a>
+      <a href="#" class="muted-link">服務條款</a>
+    </nav>
+    <span class="footer-copy">© 2026 RehabVerse</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
