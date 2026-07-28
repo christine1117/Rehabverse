@@ -15,7 +15,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Noto Sans TC","Space Grotesk",system-ui,sans-serif;
+  font-family:"Chakra Petch","Noto Sans TC",system-ui,sans-serif;
   color:var(--text);
   background:#0a0518;
   background-image:
@@ -181,7 +181,7 @@ p{text-wrap:pretty}
 .hero{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:64px 28px 48px;min-height:calc(100dvh - 64px);display:flex;align-items:center}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;width:100%}
 .eyebrow{color:#d8b4fe;font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase;margin-bottom:16px}
-.headline{font-size:58px;line-height:1.06;font-weight:900;letter-spacing:-1px}
+.headline{font-family:"Chakra Petch","Noto Sans TC",sans-serif;font-size:58px;line-height:1.1;font-weight:700;letter-spacing:1px}
 .hero-sub{margin:24px 0 30px;color:var(--muted);font-size:17px;max-width:520px}
 .hero-sub strong{color:#fff}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
@@ -199,7 +199,7 @@ p{text-wrap:pretty}
 .product-card{position:absolute;background:var(--card);border:1px solid var(--card-brd);
   backdrop-filter:blur(14px);border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .main-shot{inset:60px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center}
-.vr-figure{font-size:56px;font-weight:900;letter-spacing:2px;font-family:"Space Grotesk",sans-serif;background:linear-gradient(120deg,#c084fc,#67e8f9);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 20px rgba(168,85,247,.6));animation:bob 5s ease-in-out infinite}
+.vr-figure{font-size:56px;font-weight:900;letter-spacing:2px;font-family:"Orbitron",sans-serif;background:linear-gradient(120deg,#c084fc,#67e8f9);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 20px rgba(168,85,247,.6));animation:bob 5s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .badge{position:absolute;top:16px;left:16px;font-size:11px;font-weight:700;padding:6px 12px;border-radius:999px;background:linear-gradient(100deg,#a855f7,#ec4899);color:#fff}
 .shot-label{color:var(--muted);font-weight:600;font-size:14px}
@@ -218,8 +218,8 @@ p{text-wrap:pretty}
 
 /* section head */
 .section-head{max-width:660px;margin:0 0 58px}
-.tag{display:inline-block;font-family:"Instrument Serif",serif;font-style:italic;
-  font-size:19px;letter-spacing:0;text-transform:none;color:#c9a6ff;margin:0 0 6px 0;
+.tag{display:inline-block;font-family:"Orbitron",sans-serif;font-style:normal;
+  font-size:15px;letter-spacing:2px;text-transform:uppercase;color:#c9a6ff;margin:0 0 6px 0;
   padding:0;border:none;background:none}
 .section-head h2{font-weight:900;font-size:42px;
   letter-spacing:-.8px;line-height:1.12;margin-left:-1px}
@@ -234,7 +234,7 @@ p{text-wrap:pretty}
 .gallery .shot:nth-child(1) .shot-img{height:440px;object-position:center 30%}
 .gallery .shot:nth-child(1) figcaption{font-size:16px;padding:18px 20px}
 .shot.big{grid-column:span 2;grid-row:span 2}
-.shot-visual{height:150px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;letter-spacing:1px;font-family:"Space Grotesk",sans-serif;color:rgba(255,255,255,.92);text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.shot-visual{height:150px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;letter-spacing:1px;font-family:"Orbitron",sans-serif;color:rgba(255,255,255,.92);text-shadow:0 2px 12px rgba(0,0,0,.3)}
 .shot.big .shot-visual{height:100%;min-height:330px;font-size:40px}
 .v1{background:linear-gradient(135deg,#7c3aed,#ec4899)}
 .v2{background:linear-gradient(135deg,#6366f1,#a855f7)}
@@ -278,7 +278,7 @@ p{text-wrap:pretty}
 .feat-item:nth-child(2){margin-left:44px}
 .feat-item:nth-child(3){margin-left:88px}
 .feat-item:nth-child(4){margin-left:132px}
-.feat-no{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400;font-size:22px;
+.feat-no{font-family:"Orbitron",sans-serif;font-style:normal;font-weight:700;font-size:22px;
   color:#8a6bc9;flex:0 0 auto;min-width:34px;font-variant-numeric:tabular-nums}
 .feat-body h4{font-size:19px;font-weight:700;letter-spacing:-.3px;margin-bottom:8px}
 .feat-body p{color:var(--muted);font-size:14px;max-width:42ch}
@@ -292,7 +292,7 @@ p{text-wrap:pretty}
 .arch-card{padding:8px 0}
 .arch-diagram{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;flex-wrap:wrap;counter-reset:arch}
 .arch-node{background:none;border:none;border-radius:0;padding:0;text-align:left;min-width:auto;flex:1;min-width:140px;position:relative;counter-increment:arch}
-.arch-node::before{content:counter(arch,decimal-leading-zero);display:block;font-family:"Instrument Serif",serif;font-style:italic;font-size:34px;color:#8a6bc9;margin-bottom:8px}
+.arch-node::before{content:counter(arch,decimal-leading-zero);display:block;font-family:"Orbitron",sans-serif;font-style:normal;font-weight:700;font-size:34px;color:#8a6bc9;margin-bottom:8px}
 .arch-node b{display:block;font-size:16px}
 .arch-node span{color:var(--muted);font-size:12px}
 .arch-line{flex:0 0 auto;width:30px;height:1px;background:rgba(255,255,255,.18);position:relative;margin-top:52px}
