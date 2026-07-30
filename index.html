@@ -60,8 +60,6 @@
       </a>
       <nav class="nav-links" aria-label="主要導覽">
         <a href="#product">產品</a>
-        <a href="#pain">痛點</a>
-        <a href="#solution">解決方案</a>
         <a href="#features">核心功能</a>
         <a href="#specs">規格</a>
         <a href="#business">方案</a>
@@ -137,53 +135,6 @@
     </div>
   </section>
 
-  <!-- PAIN & SOLUTION -->
-  <section class="section" id="pain">
-    <img class="scatter-shot scatter-1" src="shot1.png" alt="" aria-hidden="true" />
-    <div class="section-head">
-      <span class="tag">Industry Pain Points</span>
-      <h2>產業場景痛點</h2>
-      <p>復健過程枯燥，患者的復健意願因此下降，這是復健醫療現場最真實的問題。</p>
-    </div>
-
-    <div class="split">
-      <div class="pain-col">
-        <h3 class="col-title pain">目前面臨的痛點</h3>
-        <ul class="pain-list">
-          <li>
-            <span class="num">01</span>
-            <div><b>復健成效不佳</b><p>患者缺乏動機，難以維持長期規律訓練，恢復進度也因此受影響。</p></div>
-          </li>
-          <li>
-            <span class="num">02</span>
-            <div><b>家屬擔憂且難以陪伴</b><p>工作繁忙難以親自陪同，對復健進度也無從掌握。</p></div>
-          </li>
-          <li>
-            <span class="num">03</span>
-            <div><b>醫療人員負擔加重</b><p>需要花費額外心力督促與紀錄，人力成本因此提高。</p></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="solution-col" id="solution">
-        <h3 class="col-title sol">解決方案</h3>
-        <p class="sol-lead">
-          RehabVerse 透過 <b>BCI 與肌電技術</b>偵測患者的復健過程，
-          把每次動作的<b>出力程度量化</b>，並將復健歷程<b>遊戲化</b>。
-          再以演算法建立<b>一起復健的機器人夥伴</b>，
-          驅動實體設備與情境回饋，幫助患者提升復健意願與成效。
-        </p>
-        <div class="flow">
-          <div class="flow-step"><span>感知</span>腦電與肌電偵測</div>
-          <i>›</i>
-          <div class="flow-step"><span>決策</span>量化與策略運算</div>
-          <i>›</i>
-          <div class="flow-step"><span>驅動</span>機器人與遊戲回饋</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CORE FEATURES / TASKS -->
   <section class="section" id="features">
     <img class="scatter-shot scatter-2" src="shot2.png" alt="" aria-hidden="true" />
@@ -227,30 +178,6 @@
     </div>
   </section>
 
-  <!-- SYSTEM ARCHITECTURE -->
-  <section class="section" id="architecture">
-    <div class="section-head">
-      <span class="tag">System Architecture</span>
-      <h2>系統架構與整合設計</h2>
-      <p>從生理訊號擷取、特徵萃取到決策控制，構成端到端（end-to-end）的即時運作管線。</p>
-    </div>
-    <div class="arch-card">
-      <div class="arch-diagram">
-        <div class="arch-node"><b>訊號擷取層</b><span>EEG 腦電與 sEMG 表面肌電，多通道生理訊號採集</span></div>
-        <div class="arch-line"></div>
-        <div class="arch-node"><b>前處理與特徵萃取</b><span>濾波、去雜訊與 MVC 標準化，萃取時頻域特徵</span></div>
-        <div class="arch-line"></div>
-        <div class="arch-node"><b>RehabVerse 決策引擎</b><span>出力量化、演算法決策與遊戲化狀態機</span></div>
-        <div class="arch-line"></div>
-        <div class="arch-node"><b>回饋與資料層</b><span>致動器控制、即時回饋與雲端資料同步</span></div>
-      </div>
-      <p class="arch-note">
-        只要接上醫療院所現有的腦電與肌電設備，RehabVerse 就能即時讀取患者的動作與出力，
-        轉換成遊戲中的表現與回饋，並自動把復健成效上傳雲端，讓醫護與家屬隨時掌握進度。
-      </p>
-    </div>
-  </section>
-
   <!-- SPECS -->
   <section class="section" id="specs">
     <img class="scatter-shot scatter-3" src="shot3.png" alt="" aria-hidden="true" />
@@ -265,8 +192,8 @@
         <dl class="spec-list">
           <div class="spec-row"><dt>感測技術</dt><dd>BCI 腦機介面與肌電 EMG</dd></div>
           <div class="spec-row"><dt>相容硬體</dt><dd>一般醫療院所腦電與肌電設備</dd></div>
-          <div class="spec-row"><dt>進階硬體</dt><dd>可參考型號購置 BioSemi</dd></div>
-          <div class="spec-row"><dt>進階模式</dt><dd>VR 沉浸式體驗，可搭配 HTC VIVE XR Elite 頭戴裝置</dd></div>
+          <div class="spec-row"><dt>進階硬體</dt><dd>可參考型號購置 Zentan ZE1 EMG Sensor、g.tec Unicorn Hybrid Black</dd></div>
+          <div class="spec-row"><dt>進階模式</dt><dd>VR 沉浸式體驗，可搭配 Meta Quest 3S 頭戴裝置</dd></div>
           <div class="spec-row"><dt>運算平台</dt><dd>一般電腦搭配軟體驅動程式</dd></div>
         </dl>
       </div>
@@ -295,7 +222,7 @@
         <img class="biz-shape" src="o1.png" alt="" aria-hidden="true" />
         <span class="biz-q">硬體選項一</span>
         <h4>沿用現有設備</h4>
-        <p>可直接使用一般醫療院所的腦電與肌電設備，也可參考型號購置 BioSemi 硬體。</p>
+        <p>可直接使用一般醫療院所的腦電與肌電設備，也可參考型號購置 Zentan ZE1 EMG Sensor、g.tec Unicorn Hybrid Black 硬體。</p>
       </article>
       <article class="biz-cell">
         <img class="biz-shape" src="o2.png" alt="" aria-hidden="true" />
@@ -331,11 +258,7 @@
 
   <footer class="footer">
     <div class="footer-brand">
-      <span class="logo-mark"></span>
-      <div>
-        <b>RehabVerse</b>
-        <p>陪伴式復健系統</p>
-      </div>
+      <img class="footer-logo" src="logo.png" alt="RehabVerse" />
     </div>
     <nav class="footer-links" aria-label="頁尾導覽">
       <a href="#product">產品</a>
